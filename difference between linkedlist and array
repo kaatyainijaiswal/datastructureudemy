@@ -1,1 +1,7 @@
-basics
+Feature         	        Array	          LinkedList
+Size	                    Fixed         	Dynamic
+Memory allocation	        Contiguous	    Non-contiguous
+Access by index	          Fast (O(1))	    Slow (O(n))
+Insertion/Deletion        Slow (O(n))	    Fast (O(1) with reference)
+Memory usage	            Less	          More (due to pointers)
+Type	                    Data structure	Data structure (nodes)
