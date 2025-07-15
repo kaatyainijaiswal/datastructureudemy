@@ -5,3 +5,36 @@ Access by index	          Fast (O(1))	    Slow (O(n))
 Insertion/Deletion        Slow (O(n))	    Fast (O(1) with reference)
 Memory usage	            Less	          More (due to pointers)
 Type	                    Data structure	Data structure (nodes)
+
+
+
+
+***************************************************************************
+✅ Your Point:
+"In arrays, a certain memory is allocated even if we don’t use it. But in LinkedList, we can keep increasing them, so isn’t LinkedList better memory-wise?"
+
+🟡 Yes, but with caveats:
+✅ LinkedList: Memory Efficient in Terms of Size
+LinkedList grows dynamically—you only use memory for the number of elements you actually store.
+
+No need to define the size in advance.
+
+Good if you don’t know how many elements you’ll need.
+
+❌ BUT: Each Node in LinkedList Uses Extra Memory
+Every element (node) stores two things:
+
+The data
+
+A pointer/reference to the next node (and possibly previous node in doubly linked list)
+
+So for each node, extra memory is used for the reference(s).
+If you're storing a large number of small items (e.g., integers), this extra pointer can actually waste a lot of memory.
+
+🔴 Array: Preallocated but Compact
+Arrays store only the data, no extra references.
+
+More memory-efficient per element.
+
+However, if you over-allocate and don’t fill all the space, then some memory is wasted.
+
